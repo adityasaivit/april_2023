@@ -26,6 +26,21 @@ int main()
       }
       
     }
-  printf("reg no         salary\n");
-  printf("%d           %d",em[b].reg,a);
+  int c=0;
+  for(int k=1;k<=n;k++)
+    {
+      if(em[k-1].sal==a)
+      {
+          c++;
+      }
+    }
+  if(c>1)
+  {
+    printf("not possible");
+  }
+  else
+  {
+    printf("reg no         salary\n");
+    printf("%d           %d",em[b].reg,a);
+  }
 }
